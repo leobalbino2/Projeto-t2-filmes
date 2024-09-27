@@ -3,20 +3,44 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-h3{
-    font-size: 20px;
+    font-family: helvetica;
 }
 
 .centralizar{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1200px; 
+    margin: 0 auto; 
+    margin-top: 70px;
+  }
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: var(--branco);
+    font-size: 18px;
+}
+
+h2{
+    font-size: 20px;
+    color: var(--azulclaro);
+}
+
+h3{
+    font-size: 20px;
+    color: var(--roxoescuro)
+}
+
+h4{
+    font-size: 16px;
+    color: var(--branco);
 }
 
 .menu-logo{
@@ -33,9 +57,13 @@ h3{
 }
 
 .menu-genero li a{
-    font-size: 20px;
+    font-size: 17px;
     color: var(--branco);
-    margin: 0 10px;
+    padding: 20px 10px;
+}
+
+.menu-genero li a:hover{
+    background-color: var(--cinzaclaro);
 }
 
 header{
@@ -43,14 +71,23 @@ header{
     background-color: var(--cinzaescuro);
 }
 
-main{
+body{
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100%;
     background-color: var(--azulescuro);
 }
 
 .caminho{
-    height: 50px;
+    height: 60px;
+    
+}
+
+.caminho h3 a{
+    color: var(--roxoescuro);
+}
+
+.caminho h3 a:hover{
+    color: var(--roxoclaro);
 }
 
 .caminho img{
@@ -58,3 +95,157 @@ main{
     margin: 0 10px;
 }
 
+.titulo{
+    justify-content: left;
+    margin: 10px 0;
+}
+
+.icone{
+    height: 45px;
+    background-color: var(--cinzaclaro);
+    border-radius: 10%;
+    border: 2px solid var(--azulclaro);
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.catalogo{
+    background-color: var(--cinzaescuro);
+    width: 100%;
+    height: 60vh;
+    justify-content: left;
+    padding: 0 20px;
+}
+
+.filme{
+    margin: 20px 20px 0 20px;
+}
+
+.filme img{
+    height: 50vh;
+}
+
+.filme h4{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.catalogo a:hover {
+    background-color: var(--cinzaclaro);
+}
+
+.catalogo a:hover h4 {
+    color: var(--vermelho);
+}
+
+/*Configuração para página de cada filme*/
+
+.filme-inf{
+    width: 100%;
+    height: 510px;
+    align-items: normal;
+}
+
+/*CAPA*/
+
+.filme-capa{
+   flex-direction: column;
+   width: 30%;
+}
+
+.filme-capa img{
+    height: 500px;
+}
+
+.filme-capa h4{
+    margin: 10px 0;
+}
+
+/*DESCRIÇÃO*/
+
+.filme-desc{
+    width: 45%;
+    padding: 5px 20px 10px 10px;
+}
+
+.filme-desc p{
+    margin-bottom: 20px;
+}
+
+span{
+    font-size: 20px;
+    color: var(--azulclaro); 
+}
+
+.onde-assistir img{
+    height: 60px;
+    border-radius: 10px;
+}
+
+.onde-assistir span{
+    color: var(--branco);
+}
+
+.onde-assistir p{
+    font-size: 14px;
+    margin: 8px;
+}
+
+.onde-assistir{
+    justify-content: left;
+    padding-top: 12px;
+}
+
+/*AVALIAÇÃO*/
+
+.filme-avaliacao{
+   width: 25%;
+   background-color: var(--cinzaescuro);
+   height: 100%;
+   border-radius: 30px;
+   padding: 20px;
+   
+}
+
+.veiculo{
+   justify-content: left;
+   align-items: normal;
+}
+
+#nota{
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--branco);
+}
+
+.veiculo img{
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.veiculo h4{
+    margin: 10px;
+}
+
+hr{
+    margin: 20px 0;
+    border-color: var(--cinzaescuro);
+}
+
+/*SINOPSE*/
+
+.filme-sinopse{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.filme-sinopse p{
+    margin: 30px;
+    text-align: justify;
+}
+
+iframe{
+    margin: 30px 0;
+}
