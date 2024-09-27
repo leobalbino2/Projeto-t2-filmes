@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: helvetica;
 }
 
 p,
@@ -12,64 +13,121 @@ h4,
 a {
   color: #ffffff;
   text-decoration: none;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 17px;
+}
+
+.fonte1 {
+  font-size: 26px; /* Muda o tamanho da fonte de "Encontre facilmente filmes e séries online!" */
+  font-weight: bold; /* Deixa a fonte em negrito */
+}
+
+.fonte2 {
+  font-size: 20px; /* Muda o tamanho da fonte de "Descubra onde assistir aos lançamentos e conteúdos mais populares com nosso guia de streaming."*/
+  color: #686868;
+}
+
+/* Fonte 3 é o estilo do h3 no paragrafo de apresentação do filme venom */
+.fonte3 {
+  font-size: 20px;
+}
+
+.fonte1,
+.fonte2 {
+  padding: 10px 0; /* Muda a altura do padding entre os dois h2 */
+}
+
+/* Classe do botão de cadastramento para alterar sua cor de fundo, cor e tamanho do padding */
+.cadastro-botao {
+  background-color: var(--branco);
+  color: var(--preto);
+  padding: 10px;
 }
 
 header {
-  height: 60px;
-  width: 100%;
   background-color: var(--cinzaescuro);
+  padding: 20px 0; /* Espaçamento top e bottom da header */
+}
+
+.logologin {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
-}
-
-main {
-  height: calc(100vh - 60px);
-  width: 100%;
-  background-color: var(--azulescuro);
 }
 
 .login {
   display: flex;
-  width: 230px;
-  justify-content: space-between;
-}
-
-.titulos {
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-  align-items: center;
-}
-
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.generos {
-  height: 250px;
-  display: flex;
-  flex: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--azulescuro);
+}
+
+.apresentacao {
+  display: flex; /* Transforma a div titulos que é a apresentação da página em display flex */
+  flex-direction: column; /* Deixa a div em coluna */
+  justify-content: center; /* Centraliza o contéudo */
+  height: 200px; /* Muda a altura da div */
+}
+
+.container {
+  max-width: 1450px; /* Altera o tamanho da margem da página inteira */
+  margin: 0 auto; /* Centraliza a margem da página inteira */
+}
+
+.generos {
+  height: 300px;
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item1 {
+  padding: 0 20px; /* Muda o padding dos botões de cadastro e login */
+}
+
 .item3 {
+  display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
-  height: 100px;
-  width: 100px;
+  width: 190px; /* Altera o tamanho horizontal das caixinhas de gênero */
+  height: 200px; /* Altera o tamanho vertical das caixinhas de gênero */
   background-color: var(--cinzaescuro);
 }
 
 .lancamento {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   background-color: var(--cinzaescuro);
+  padding-left: 30px;
+}
+
+.filmelancamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 40px;
 }
 
 .imgfilme {
-  width: 600px;
+  width: 730px;
 }
+
+.botao-saiba {
+  color: var(--preto);
+  background-color: var(--branco);
+  padding: 10px;
+  width: 130px;
+}
+
