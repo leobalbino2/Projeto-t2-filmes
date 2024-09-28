@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: helvetica;
+  font-family: verdana;
 }
 
 p,
@@ -27,12 +27,18 @@ h1 {
 
 .fonte2 {
   font-size: 20px; /* Muda o tamanho da fonte de "Descubra onde assistir aos lançamentos e conteúdos mais populares com nosso guia de streaming."*/
-  color: #686868;
+  color: var(--cinzaclaro2);
 }
 
 /* Fonte 3 é o estilo do h3 no paragrafo de apresentação do filme venom */
 .fonte3 {
   font-size: 20px;
+  font-weight: bold;
+}
+
+.fonte4 {
+  color: var(--cinzaclaro2);
+  padding-top: 10px;
 }
 
 .fonte1,
@@ -74,7 +80,7 @@ main {
   display: flex; /* Transforma a div titulos que é a apresentação da página em display flex */
   flex-direction: column; /* Deixa a div em coluna */
   justify-content: center; /* Centraliza o contéudo */
-  height: 200px; /* Muda a altura da div */
+  height: 150px; /* Muda a altura da div */
 }
 
 .container {
@@ -83,11 +89,10 @@ main {
 }
 
 .generos {
-  height: 300px;
   display: flex;
   flex: wrap;
   justify-content: space-between;
-  align-items: center;
+  height: 250px;
 }
 
 .item1 {
@@ -124,10 +129,41 @@ main {
   width: 730px;
 }
 
-.botao-saiba {
-  color: var(--preto);
+.botao-filme {
+  display: flex;
   background-color: var(--branco);
-  padding: 10px;
-  width: 130px;
+  width: 190px;
 }
 
+.botao-saiba {
+  color: var(--preto);
+  padding: 10px;
+  width: 150px;
+  font-weight: bold;
+}
+
+.seta {
+  height: 15px;
+  margin: auto 0;
+}
+
+.navlancamentos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  padding: 0 600px;
+}
+
+.circle {
+  position: 100px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--cinzaclaro2);
+}
+
+.select {
+  background-color: var(--branco)
+}
