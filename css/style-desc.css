@@ -95,6 +95,10 @@ body{
     margin: 0 10px;
 }
 
+.caminho .atual{
+    color: var(--roxoescuro);
+}
+
 .titulo{
     justify-content: left;
     margin: 10px 0;
@@ -120,6 +124,7 @@ body{
 
 .filme{
     margin: 20px 20px 0 20px;
+    flex-direction: column;
 }
 
 .filme img{
@@ -129,6 +134,10 @@ body{
 .filme h4{
     margin: 10px 0;
     text-align: center;
+    max-width: 270px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .catalogo a:hover {
