@@ -6,7 +6,6 @@
 }
 
 p,
-h1,
 h2,
 h3,
 h4,
@@ -56,6 +55,12 @@ h1 {
 header {
   background-color: var(--cinzaescuro);
   padding: 10px 0; /* Espaçamento top e bottom da header */
+}
+
+.logo h1 {
+  color: #551a8B;
+  font-size: 32px;
+  margin-left: 15px;
 }
 
 .menu {
