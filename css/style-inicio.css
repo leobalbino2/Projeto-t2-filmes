@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: verdana;
+  font-family: helvetica;
 }
 
 p,
@@ -55,10 +55,10 @@ h1 {
 
 header {
   background-color: var(--cinzaescuro);
-  padding: 20px 0; /* Espaçamento top e bottom da header */
+  padding: 10px 0; /* Espaçamento top e bottom da header */
 }
 
-.logologin {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +92,7 @@ main {
   display: flex;
   flex: wrap;
   justify-content: space-between;
-  height: 250px;
+  height: 220px;
 }
 
 .item1 {
@@ -166,4 +166,10 @@ main {
 
 .select {
   background-color: var(--branco)
+}
+
+.cabecalho {
+height: 100px;
+width: 100%;
+background-color: var(--cinzaescuro);
 }
