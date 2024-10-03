@@ -135,6 +135,10 @@ main {
   width: 190px;
 }
 
+.botao-filme-class {
+  display: inline;
+}
+
 .botao-saiba {
   color: var(--preto);
   padding: 10px;
@@ -165,11 +169,11 @@ main {
 }
 
 .select {
-  background-color: var(--branco)
+  background-color: var(--branco);
 }
 
 .cabecalho {
-height: 100px;
-width: 100%;
-background-color: var(--cinzaescuro);
+  height: 100px;
+  width: 100%;
+  background-color: var(--cinzaescuro);
 }
