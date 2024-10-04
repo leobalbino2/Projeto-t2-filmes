@@ -134,26 +134,27 @@ main {
   width: 730px;
 }
 
-.botao-filme {
-  display: flex;
+.botao {
   background-color: var(--branco);
   width: 190px;
 }
 
-.botao-filme-class {
-  display: inline;
+.botao a {
+  display: flex;
+  align-items: center; 
+  text-decoration: none; 
 }
 
-.botao-saiba {
+.botao-sobre {
   color: var(--preto);
   padding: 10px;
-  width: 150px;
   font-weight: bold;
 }
 
 .seta {
-  height: 15px;
-  margin: auto 0;
+  width: 30px;
+  margin-left: auto;
+  padding-right: 10px;
 }
 
 .navlancamentos {
@@ -178,7 +179,24 @@ main {
 }
 
 .cabecalho {
-  height: 100px;
+  height: 200px;
   width: 100%;
   background-color: var(--cinzaescuro);
 }
+
+.Desenvolvedores-desc {
+  padding-top: 30px;
+}
+
+.dev {
+  background-color: var(--branco);
+  width: 300px;
+ margin: 15px 0;
+}
+
+.dev a {
+  display: flex;
+  align-items: center; 
+  text-decoration: none; 
+}
+
