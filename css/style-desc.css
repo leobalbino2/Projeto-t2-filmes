@@ -141,7 +141,6 @@ body{
     background-color: var(--cinzaescuro);
     width: 100%;
     height: 60vh;
-    justify-content: left;
     padding: 0 20px;
 }
 
