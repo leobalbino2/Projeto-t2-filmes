@@ -81,22 +81,6 @@ header {
   margin-left: 15px;
 }
 
-.login {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.cadastro-botao {
-  background-color: var(--branco);
-  color: var(--preto);
-  padding: 10px;
-}
-
-.item1 {
-  padding: 0 20px; 
-}
-
 /* _______________________________________________ MAIN _______________________________________________ */
 
 /* _______ PRIMEIRA DIV DE MAIN _______ */
@@ -104,20 +88,22 @@ header {
 main {
   height: 100%;
   width: 100%;
-  min-height: calc(100vh - 120px);/*Estabelecer tamanho minino no main para fixar rodapé*/
+  min-height: calc(
+    100vh - 120px
+  ); /*Estabelecer tamanho minino no main para fixar rodapé*/
   background-color: var(--azulescuro);
 }
 
 .apresentacao {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  height: 150px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
 }
 
 .container {
-  max-width: 1450px; 
-  margin: 0 auto; 
+  max-width: 1450px;
+  margin: 0 auto;
 }
 
 /* _______ SEGUNDA DIV DE MAIN _______ */
@@ -203,20 +189,14 @@ main {
   text-align: center;
   align-items: center;
   width: 190px;
-  height: 200px; 
+  height: 200px;
   background-color: var(--cinzaescuro);
 }
 
-/* _______________________________________________ RODAPÉ DO PROJETO _______________________________________________ */
-
-footer {
-  width: 100%;
-  padding: 15px;
-  background-color: var(--cinzaescuro);
-}
+/* _______ DIV SOBRE O PROJETO 2  _______ */
 
 .cabecalho {
-  height: 200px;
+  height: 230px;
   width: 100%;
   background-color: var(--cinzaescuro);
 }
@@ -235,6 +215,20 @@ footer {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+
+.espaco {
+  height: 50px;
+  width: 100%;
+  background: var(--azulescuro);
+}
+
+/* _______________________________________________ RODAPÉ DO PROJETO _______________________________________________ */
+
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--cinzaescuro);
 }
 
 /* _______________________________________________ MAIN NA PÁGINA SOBRE _______________________________________________ */
@@ -307,7 +301,7 @@ footer {
   border-radius: 10px;
 }
 
-footer{
+footer {
   position: relative;
   bottom: 0;
   width: 100%;
