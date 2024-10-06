@@ -1,3 +1,4 @@
+/* _______________________________________________ CLASSES GENÉRICAS _______________________________________________ */
 * {
   padding: 0;
   margin: 0;
@@ -34,17 +35,18 @@ h6 {
   color: var(--cinzaclaro2);
 }
 
+/* _______________________________________________ FONTES _______________________________________________ */
+
 .fonte1 {
-  font-size: 26px; /* Muda o tamanho da fonte de "Encontre facilmente filmes e séries online!" */
-  font-weight: bold; /* Deixa a fonte em negrito */
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .fonte2 {
-  font-size: 20px; /* Muda o tamanho da fonte de "Descubra onde assistir aos lançamentos e conteúdos mais populares com nosso guia de streaming."*/
+  font-size: 20px;
   color: var(--cinzaclaro2);
 }
 
-/* Fonte 3 é o estilo do h3 no paragrafo de apresentação do filme venom */
 .fonte3 {
   font-size: 20px;
   font-weight: bold;
@@ -57,25 +59,14 @@ h6 {
 
 .fonte1,
 .fonte2 {
-  padding: 10px 0; /* Muda a altura do padding entre os dois h2 */
+  padding: 10px 0;
 }
 
-/* Classe do botão de cadastramento para alterar sua cor de fundo, cor e tamanho do padding */
-.cadastro-botao {
-  background-color: var(--branco);
-  color: var(--preto);
-  padding: 10px;
-}
+/* _______________________________________________ CABEÇALHO DA PÁGINA _______________________________________________ */
 
 header {
   background-color: var(--cinzaescuro);
-  padding: 10px 0; /* Espaçamento top e bottom da header */
-}
-
-.logo h1 {
-  color: #551a8b;
-  font-size: 32px;
-  margin-left: 15px;
+  padding: 10px 0;
 }
 
 .menu {
@@ -84,11 +75,31 @@ header {
   align-items: center;
 }
 
+.logo h1 {
+  color: #551a8b;
+  font-size: 32px;
+  margin-left: 15px;
+}
+
 .login {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
+.cadastro-botao {
+  background-color: var(--branco);
+  color: var(--preto);
+  padding: 10px;
+}
+
+.item1 {
+  padding: 0 20px; 
+}
+
+/* _______________________________________________ MAIN _______________________________________________ */
+
+/* _______ PRIMEIRA DIV DE MAIN _______ */
 
 main {
   height: 100%;
@@ -97,37 +108,18 @@ main {
 }
 
 .apresentacao {
-  display: flex; /* Transforma a div titulos que é a apresentação da página em display flex */
-  flex-direction: column; /* Deixa a div em coluna */
-  justify-content: center; /* Centraliza o contéudo */
-  height: 150px; /* Muda a altura da div */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  height: 150px; 
 }
 
 .container {
-  max-width: 1450px; /* Altera o tamanho da margem da página inteira */
-  margin: 0 auto; /* Centraliza a margem da página inteira */
+  max-width: 1450px; 
+  margin: 0 auto; 
 }
 
-.generos {
-  display: flex;
-  flex: wrap;
-  justify-content: space-between;
-  height: 220px;
-}
-
-.item1 {
-  padding: 0 20px; /* Muda o padding dos botões de cadastro e login */
-}
-
-.item3 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 190px; /* Altera o tamanho horizontal das caixinhas de gênero */
-  height: 200px; /* Altera o tamanho vertical das caixinhas de gênero */
-  background-color: var(--cinzaescuro);
-}
+/* _______ SEGUNDA DIV DE MAIN _______ */
 
 .fundo {
   width: 100%;
@@ -143,10 +135,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   padding: 70px 40px;
-}
-
-.imgfilme {
-  width: 730px;
 }
 
 .botao {
@@ -172,6 +160,12 @@ main {
   padding-right: 10px;
 }
 
+.imgfilme {
+  width: 730px;
+}
+
+/* _______ CÍRCULOS TEMPORÁRIOS DE FILMES EM LANÇAMENTO _______ */
+
 .navlancamentos {
   display: flex;
   flex-direction: row;
@@ -191,6 +185,33 @@ main {
 
 .select {
   background-color: var(--branco);
+}
+
+/* _______ TERCEIRA DIV DE MAIN _______ */
+
+.generos {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  height: 220px;
+}
+
+.item3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 190px;
+  height: 200px; 
+  background-color: var(--cinzaescuro);
+}
+
+/* _______________________________________________ RODAPÉ DO PROJETO _______________________________________________ */
+
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--cinzaescuro);
 }
 
 .cabecalho {
@@ -215,7 +236,7 @@ main {
   text-decoration: none;
 }
 
-/* MENU SOBRE*/
+/* _______________________________________________ MAIN NA PÁGINA SOBRE _______________________________________________ */
 
 .centralizar {
   display: flex;
@@ -223,6 +244,8 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
+
+/* _______ MENU NA PÁGINA SOBRE _______ */
 
 .caminho {
   height: 60px;
@@ -245,7 +268,7 @@ main {
   color: var(--roxoescuro);
 }
 
-/* SOBRE */
+/* _______ SOBRE / QUEM DESENVOLVEU _______ */
 
 .fundo-sobre {
   width: 100%;
@@ -263,6 +286,8 @@ main {
   background-color: var(--cinzaescuro);
 }
 
+/* _______ ÍCONES REDES _______ */
+
 .icones {
   display: flex;
   flex-direction: row;
@@ -279,12 +304,4 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-}
-
-/* FOOTER */
-
-footer {
-  width: 100%;
-  padding: 15px;
-  background-color: var(--cinzaescuro);
 }
