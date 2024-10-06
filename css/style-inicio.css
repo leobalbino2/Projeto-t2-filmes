@@ -15,8 +15,23 @@ a {
   font-weight: normal;
 }
 
+b {
+  font-size: 20px;
+  color: var(--azulclaro);
+}
+
+p {
+  font-size: 18px;
+}
+
 h1 {
   font-size: 17px;
+}
+
+h6 {
+  text-align: center;
+  font-size: 13px;
+  color: var(--cinzaclaro2);
 }
 
 .fonte1 {
@@ -58,7 +73,7 @@ header {
 }
 
 .logo h1 {
-  color: #551a8B;
+  color: #551a8b;
   font-size: 32px;
   margin-left: 15px;
 }
@@ -141,8 +156,8 @@ main {
 
 .botao a {
   display: flex;
-  align-items: center; 
-  text-decoration: none; 
+  align-items: center;
+  text-decoration: none;
 }
 
 .botao-sobre {
@@ -191,43 +206,42 @@ main {
 .dev {
   background-color: var(--branco);
   width: 300px;
- margin: 15px 0;
+  margin: 15px 0;
 }
 
 .dev a {
   display: flex;
-  align-items: center; 
-  text-decoration: none; 
+  align-items: center;
+  text-decoration: none;
 }
 
 /* MENU SOBRE*/
 
-.centralizar{
+.centralizar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.caminho{
+.caminho {
   height: 60px;
-  
 }
 
-.caminho h6 a{
+.caminho h6 a {
   color: var(--azulclaro);
 }
 
-.caminho h6 a:hover{
+.caminho h6 a:hover {
   color: var(--azulclaro2);
 }
 
-.caminho img{
+.caminho img {
   height: 15px;
   margin: 0 10px;
 }
 
-.caminho .atual{
+.caminho .atual {
   color: var(--roxoescuro);
 }
 
@@ -236,22 +250,41 @@ main {
 .fundo-sobre {
   width: 100%;
   height: 100%;
+  background-color: var(--azulescuro);
+  padding: 35px 0 35px;
+}
+
+.sobrep p {
+  padding: 10px 0;
+}
+
+.titulo {
+  padding-top: 10px;
   background-color: var(--cinzaescuro);
-  padding: 50px 0;
-  padding-bottom: 305px; 
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.icones h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icones img {
+  margin: -10px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
 }
 
 /* FOOTER */
 
-footer{
-  bottom: 0;
+footer {
   width: 100%;
   padding: 15px;
   background-color: var(--cinzaescuro);
-}
-
-h6{
-  text-align: center;
-  font-size: 13px;
-  color: var(--cinzaclaro2);
 }
