@@ -6,6 +6,7 @@
     font-family: helvetica;
 }
 
+/*Classe para centralizar elementos e tornar FLEX*/
 .centralizar{
     display: flex;
     justify-content: center;
@@ -13,11 +14,13 @@
     flex-wrap: wrap;
 }
 
+/*Classe para tamanho padrão da página*/
+
 .container{
     max-width: 1200px; 
     margin: 0 auto; 
     margin-top: 70px;
-  }
+}
 
 a{
     text-decoration: none;
@@ -53,9 +56,19 @@ h6{
     color: var(--cinzaclaro2);
 }
 
+/*Estipular tamanho minimo da página*/
 main{
     min-height: calc(100vh - 120px);/*Fixar rodapé da página em baixo*/
 }
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--azulescuro);
+}
+
+/*MENU - LOGO - CATEGORIAS (GÊNEROS)*/
 
 .menu-logo{
     position: absolute;
@@ -85,12 +98,7 @@ header{
     background-color: var(--cinzaescuro);
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    background-color: var(--azulescuro);
-}
+/*Caminho para as páginas*/
 
 .caminho{
     height: 60px;
@@ -113,6 +121,8 @@ body{
 .caminho .atual{
     color: var(--roxoescuro);
 }
+
+/*Titulo e descrição do gênero*/
 
 .titulo{
     justify-content: left;
@@ -137,11 +147,14 @@ body{
     color: var(--cinzaclaro2);
 }
 
+/*Campo com capa dos filmes relacionado ao gênero*/
+
 .catalogo{
     background-color: var(--cinzaescuro);
     width: 100%;
     height: 60vh;
     padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 .filme{
@@ -178,6 +191,7 @@ body{
     align-items: normal;
 }
 
+/*PÁGINA DE CADA FILME*/
 /*CAPA*/
 
 .filme-capa{
@@ -284,9 +298,13 @@ hr{
     text-align: justify;
 }
 
+/*TRAILER*/
+
 iframe{
     margin: 30px 0;
 }
+
+/*RODAPÉ*/
 
 footer{
     position: relative;

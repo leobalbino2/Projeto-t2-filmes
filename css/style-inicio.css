@@ -89,7 +89,7 @@ main {
   height: 100%;
   width: 100%;
   min-height: calc(
-    100vh - 120px
+    100vh - 117px
   ); /*Estabelecer tamanho minino no main para fixar rodapé*/
   background-color: var(--azulescuro);
 }
